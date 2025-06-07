@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tic Tak Toe</h1>
+    <div id="box">
+        <div class="row">
+            <div id="0" class="col" onclick="MyGame(this)"></div>
+            <div id="1" class="col" onclick="MyGame(this)"></div>
+            <div id="2" class="col" onclick="MyGame(this)"></div>
+        </div>
+        <div class="row">
+            <div id="3" class="col" onclick="MyGame(this)"></div>
+            <div id="4" class="col" onclick="MyGame(this)"></div>
+            <div id="5" class="col" onclick="MyGame(this)"></div>
+        </div>
+        <div class="row">
+            <div id="6" class="col" onclick="MyGame(this)"></div>
+            <div id="7" class="col" onclick="MyGame(this)"></div>
+            <div id="8" class="col" onclick="MyGame(this)"></div>
+        </div>
+    </div>
+    <p id="result" class="result-text"></p>
+    <button onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Reset defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8e1f4, #e1f7f8);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #4a148c;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+/* Game board container */
+#box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #ffffffaa;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Rows */
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+/* Cells */
+.col {
+    width: 80px;
+    height: 80px;
+    background-color: #fefefe;
+    border: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.col:hover {
+    background-color: #e0f7fa;
+    box-shadow: 0 0 10px #b2ebf2;
+}
+
+/* Player colors */
+.col.x {
+    color: #d32f2f;
+}
+
+.col.o {
+    color: #1976d2;
+}
+
+/* Winner display */
+.result-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00695c;
+    text-align: center;
+}
+
+/* Highlight winning cells */
+.winning {
+    background-color: #c8e6c9 !important;
+    border-color: #388e3c !important;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #c2185b;
+}
